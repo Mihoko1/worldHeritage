@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="query">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="row" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType> 
+            <xs:sequence>
+              <xs:element name="category" type="xs:string" />
+              <xs:element name="criteria_txt" type="xs:string" />
+              <xs:element name="danger" type="xs:string" minOccurs="0"/>
+              <xs:element name="date_inscribed" type="xs:string" />
+              <xs:element name="extension" type="xs:string" />
+              <xs:element name="http_url" type="xs:string" />
+              <xs:element name="id_number" type="xs:string" />
+              <xs:element name="image_url" type="xs:anyURI" />
+              <xs:element name="iso_code" type="xs:string" />
+              <xs:element name="justification" type="xs:anyType" />
+              <xs:element name="latitude" type="xs:string" />
+              <xs:element name="location" type="xs:string" />
+              <xs:element name="longitude" type="xs:string" />
+              <xs:element name="region" type="xs:string" />
+              <xs:element name="revision" type="xs:string" />
+              <xs:element name="secondary_dates" type="xs:string" />
+              <xs:element name="short_description" type="xs:anyType" />
+              <xs:element name="site" type="xs:anyType" />
+              <xs:element name="states" type="xs:string" />
+              <xs:element name="transboundary" type="xs:string" />
+              <xs:element name="unique_number" type="xs:positiveInteger" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element> 
+</xs:schema>
